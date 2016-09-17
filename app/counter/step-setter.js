@@ -30,7 +30,7 @@ export default class StepSetter extends Component {
       this.props.changeStep(step)
       errorText = null
     } else {
-      errorText = 'Type a number between 1 and 10'
+      errorText = `Type a number between ${STEP_MIN} and ${STEP_MAX}`
     }
     this.setState({ errorText })
   }
